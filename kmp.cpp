@@ -3,7 +3,10 @@
 /*
 # KMP.cpp
 
-this algorithm returns the start index of the position where pattern is found in the text (in 1 based indexing).
+this algorithm returns the start index of the position where pattern is found in the text (considering 1 based indexing of text).
+There is no need to preprocess input pattern or text before passing to this KMP function. 
+
+The output might need to be reduced by 1 if the index in text from where the pattern starts (considering 0 based indexing) is needed.
 
 If the pattern is not found - returns 0.
 
